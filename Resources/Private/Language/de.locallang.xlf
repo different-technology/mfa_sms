@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2020-03-12T21:51:05Z" product-name="mfa_sms">
+        <header/>
+        <body>
+            <trans-unit id="mfa_sms.title" resname="mfa_sms.title">
+                <target>SMS Authentifizierungs Code</target>
+            </trans-unit>
+            <trans-unit id="mfa_sms.description" resname="mfa_sms.description">
+                <target>Dieser MFA Anbieter ermöglicht die Authentifizierung via SMS, welche an Ihr Mobiltelefon gesendet wird.</target>
+            </trans-unit>
+            <trans-unit id="mfa_sms.setupInstructions" resname="mfa_sms.setupInstructions">
+                <target>Mit dem SMS-basierten Authentifizierungscode können Sie die Sicherheit Ihrer Konten erhöhen, indem Sie bei jeder Anmeldung einen sechsstelligen Code benötigen.
+                    Dieser MFA Dienst sendet eine Textnachricht mit einem geheimen Code an Ihr Mobiltelefon.
+                    Jeder Authentifizierungscode ist nur einmal gültig.
+
+                    Einrichtung:
+                    1. Geben Sie Ihre Handynummer ein, einschließlich des internationalen Telefonvorwahl (z. B. +1 für die USA oder +49 für Deutschland).
+                    2. Bitte überprüfen Sie Ihre Handynummer zweimal.
+                    3. Senden Sie das Formular, um den MFA Anbieter zu aktivieren
+
+                    Hinweis: Ihr TYPO3-Administrator muss einen externen SMS-Anbieter konfigurieren, bevor Sie den SMS Dienst verwenden können.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="sms.message" resname="sms.message">
+                <target>%s ist Ihr TYPO3-Authentifizierungscode.</target>
+            </trans-unit>
+
+            <trans-unit id="input.mobileNumber.label" resname="input.mobileNumber.label">
+                <target>Handynummer</target>
+            </trans-unit>
+            <trans-unit id="input.mobileNumber.help" resname="input.mobileNumber.help">
+                <target>Geben Sie Ihre vollständige Mobiltelefonnummer ein, um den Authentifizierungscode per SMS zu erhalten, einschließlich der internationalen Telefonvorwahl (z. B. +49316316316).</target>
+            </trans-unit>
+
+            <trans-unit id="edit.table.lastUsed" resname="edit.table.lastUsed">
+                <target>Zuletzt verwendet</target>
+            </trans-unit>
+            <trans-unit id="edit.table.lastUsed.default" resname="edit.table.lastUsed.default">
+                <target>Noch nie</target>
+            </trans-unit>
+            <trans-unit id="edit.table.lastUpdated" resname="edit.table.lastUpdated">
+                <target>Zuletzt aktualisiert</target>
+            </trans-unit>
+
+            <trans-unit id="auth.authCode.inputLabel" resname="auth.authCode.inputLabel">
+                <target>Authentifizierungs Code</target>
+            </trans-unit>
+            <trans-unit id="auth.message" resname="auth.message">
+                <target>Wir haben Ihnen gerade eine Nachricht per SMS mit Ihrem Authentifizierungscode gesendet. Geben Sie diesen Code ein, um Ihre Identität zu überprüfen.</target>
+            </trans-unit>
+            <trans-unit id="auth.resend.button" resname="auth.resend.button">
+                <target>Code erneut versenden</target>
+            </trans-unit>
+            <trans-unit id="auth.locked" resname="auth.locked">
+                <target>Die maximale Anzahl für Fehlversuche für diesen MFA Anbieter ist überschritten. Bitte nutzen Sie einen anderen MFA Anbieter oder wenden Sie sich an Ihren Administrator.</target>
+            </trans-unit>
+
+            <trans-unit id="error.dsn.invalid.message" resname="error.dsn.invalid.message">
+                <target>Der externe SMS-Anbieter ist nicht richtig konfiguriert. Bitte konfigurieren Sie die DSN Einstellungen der TYPO3 Extension.</target>
+            </trans-unit>
+            <trans-unit id="error.dsn.invalid.title" resname="error.dsn.invalid.title">
+                <target>SMS-Versand nicht möglich</target>
+            </trans-unit>
+            <trans-unit id="error.mobileNumber.empty.message" resname="error.mobileNumber.empty.message">
+                <target>Handynummer darf nicht leer sein.</target>
+            </trans-unit>
+            <trans-unit id="error.mobileNumber.empty.title" resname="error.mobileNumber.empty.title">
+                <target>Handynummer nicht gültig</target>
+            </trans-unit>
+            <trans-unit id="error.mobileNumber.missingCountryPrefix.message" resname="error.mobileNumber.missingCountryPrefix.message">
+                <target>Die Handynummer muss mit der internationalen Telefonvorwahl beginnen (z. B. +1 oder +49).</target>
+            </trans-unit>
+            <trans-unit id="error.mobileNumber.missingCountryPrefix.title" resname="error.mobileNumber.missingCountryPrefix.title">
+                <target>Handynummer nicht gültig</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

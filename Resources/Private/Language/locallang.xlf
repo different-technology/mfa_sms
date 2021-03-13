@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2020-03-12T21:51:05Z" product-name="mfa_sms">
+        <header/>
+        <body>
+            <trans-unit id="mfa_sms.title" resname="mfa_sms.title">
+                <source>SMS Authentication Code</source>
+            </trans-unit>
+            <trans-unit id="mfa_sms.description" resname="mfa_sms.description">
+                <source>This MFA provider allows to authenticate with receiving a SMS to your mobile phone.</source>
+            </trans-unit>
+            <trans-unit id="mfa_sms.setupInstructions" resname="mfa_sms.setupInstructions">
+                <source>The SMS based authentication code enables you to strengthen your accounts' security by requiring a six-digit code on every login.
+                    This MFA provider sends a text message with a secret code to your mobile phone.
+                    Each authentication code is only valid once.
+
+                    Setting up:
+                    1. Enter your mobile phone number, including the international prefix (eg. +1 for the US or +49 for Germany)
+                    2. Please check your mobile phone number twice.
+                    3. Submit the form to activate the MFA provider
+
+                    Note: Your TYPO3 admin has to setup an external SMS provider before you can use this MFA provider.
+                </source>
+            </trans-unit>
+
+            <trans-unit id="sms.message" resname="sms.message">
+                <source>%s is your TYPO3 authentication code.</source>
+            </trans-unit>
+
+            <trans-unit id="input.mobileNumber.label" resname="input.mobileNumber.label">
+                <source>Mobile number</source>
+            </trans-unit>
+            <trans-unit id="input.mobileNumber.help" resname="input.mobileNumber.help">
+                <source>Enter your full mobile phone number to receive the authentication code via SMS, including county prefix (e.g. +49316316316)</source>
+            </trans-unit>
+
+            <trans-unit id="edit.table.lastUsed" resname="edit.table.lastUsed">
+                <source>Last used</source>
+            </trans-unit>
+            <trans-unit id="edit.table.lastUsed.default" resname="edit.table.lastUsed.default">
+                <source>Never</source>
+            </trans-unit>
+            <trans-unit id="edit.table.lastUpdated" resname="edit.table.lastUpdated">
+                <source>Last updated</source>
+            </trans-unit>
+
+            <trans-unit id="auth.authCode.inputLabel" resname="auth.authCode.inputLabel">
+                <source>Authentication code</source>
+            </trans-unit>
+            <trans-unit id="auth.message" resname="auth.message">
+                <source>We just sent you a message via SMS with your authentication code. Enter the code to verify your identity.</source>
+            </trans-unit>
+            <trans-unit id="auth.resend.button" resname="auth.resend.button">
+                <source>Re-send the code</source>
+            </trans-unit>
+            <trans-unit id="auth.locked" resname="auth.locked">
+                <source>The maximum attempts for this provider are exceeded. Please use another provider or contact your administrator.</source>
+            </trans-unit>
+
+            <trans-unit id="error.dsn.invalid.message" resname="error.dsn.invalid.message">
+                <source>External SMS provider is not configured correctly. Please setup DSN in the TYPO3 extension configuration.</source>
+            </trans-unit>
+            <trans-unit id="error.dsn.invalid.title" resname="error.dsn.invalid.title">
+                <source>SMS sending not possible</source>
+            </trans-unit>
+            <trans-unit id="error.mobileNumber.empty.message" resname="error.mobileNumber.empty.message">
+                <source>Mobile number cannot be empty.</source>
+            </trans-unit>
+            <trans-unit id="error.mobileNumber.empty.title" resname="error.mobileNumber.empty.title">
+                <source>Mobile number not valid</source>
+            </trans-unit>
+            <trans-unit id="error.mobileNumber.missingCountryPrefix.message" resname="error.mobileNumber.missingCountryPrefix.message">
+                <source>Mobile number must start with the country prefix (eg. +1 or +49).</source>
+            </trans-unit>
+            <trans-unit id="error.mobileNumber.missingCountryPrefix.title" resname="error.mobileNumber.missingCountryPrefix.title">
+                <source>Mobile number not valid</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

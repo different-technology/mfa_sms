@@ -1,0 +1,11 @@
+/.Build
+/.idea
+/composer.lock
+/Resources/Private/vendor
+.DS_Store
+.php_cs.cache
+/.ddev
+/public
+/var
+/vendor
+Thumbs.db

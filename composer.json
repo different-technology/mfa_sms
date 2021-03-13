@@ -1,0 +1,41 @@
+{
+	"name": "different-technology/mfa-sms",
+	"description": "TYPO3 SMS MFA provider (requires external SMS provider)",
+	"type": "typo3-cms-extension",
+	"license": "GPL-3.0",
+	"authors": [
+		{
+			"name": "Markus Hölzle",
+			"email": "typo3@markus-hoelzle.de",
+			"homepage": "https://different.technology/"
+		}
+	],
+	"require": {
+		"php": ">=7.4",
+		"typo3/cms-core": "^11.1 || dev-master",
+		"symfony/notifier": "^5.2"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-master",
+		"typo3/tailor": "^1.2",
+		"typo3/coding-standards": "^0.2.0"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "mfa_sms"
+		}
+	},
+	"replace": {
+		"typo3-ter/mfa_sms": "self.version"
+	},
+	"autoload": {
+		"psr-4": {
+			"DifferentTechnology\\MfaSms\\": "Classes/"
+		}
+	},
+	"scripts": {
+		"cs": [
+			"@php vendor/bin/php-cs-fixer fix --dry-run --diff --diff-format=udiff --config=vendor/typo3/coding-standards/templates/extension_php_cs.dist Classes/"
+		]
+	}
+}

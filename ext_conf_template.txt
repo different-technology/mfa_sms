@@ -1,0 +1,5 @@
+# cat=Basic; type=string; label=DSN configuration, see documentation for more details
+dsn =
+
+# cat=Basic; type=int; label=Max failed attempts until SMS MFA is locked (set between 1 and 10)
+maxAttempts = 3
