@@ -8,4 +8,5 @@
 /public
 /var
 /vendor
+/Resources/Private/Php/ComposerLibraries/vendor
 Thumbs.db

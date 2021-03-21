@@ -17,6 +17,9 @@ $EM_CONF[$_EXTKEY] = [
         'suggests' => []
     ],
     'autoload' => [
+        'classmap' => [
+            'Resources/Private/Php/'
+        ],
         'psr-4' => [
             'DifferentTechnology\\MfaSms\\' => 'Classes/',
         ]

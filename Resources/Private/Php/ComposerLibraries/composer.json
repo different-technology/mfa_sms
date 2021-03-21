@@ -1,0 +1,14 @@
+{
+	"name": "different-technology/mfa-sms-ter",
+	"description": "TER release composer.json",
+	"config": {
+		"platform": {
+			"php": "7.4"
+		},
+		"classmap-authoritative": true,
+		"prepend-autoloader": false
+	},
+	"require": {
+		"symfony/notifier": "^5.2"
+	}
+}
