@@ -2,6 +2,8 @@
 
 This extension adds the SMS MFA provider to TYPO3, using the new MFA API, available since TYPO3 v11.1.
 
+Blog post about SMS as MFA: [https://markus-code.com/2021/03/sms-two-factor-authentication-for-typo3/](https://markus-code.com/2021/03/sms-two-factor-authentication-for-typo3/)
+
 **Note**: Since the TYPO3 MFA API is still experimental, changes in upcoming releases
 are to be expected.
 
